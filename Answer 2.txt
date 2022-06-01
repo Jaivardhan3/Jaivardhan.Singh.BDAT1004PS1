@@ -1,0 +1,4 @@
+SELECT user_id, MAX( transction_id), spend 
+FROM user_transactions
+WHERE spend >=1500 
+FETCH FIRST 20 ROWS ONLY;
